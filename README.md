@@ -11,7 +11,7 @@
 <p align="center">
   <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a>
   <a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-  <a href="https://github.com/ishandutta2007/Awesome-Cloud-Identity-User-Authentication/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cloud-Identity-User-Authentication?style=flat-square&color=gold" alt="GitHub Stars" /></a>
+  <a href="https://github.com/ishandutta2007/Awesome-Cloud-Identity-User-Authentication/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Cloud-Identity-User-Authentication?style=flat-square&color=gold" alt="GitHub_Stars" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Cloud-Identity-User-Authentication/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Cloud-Identity-User-Authentication?style=flat-square&color=blue" alt="GitHub Forks" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Cloud-Identity-User-Authentication/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Cloud-Identity-User-Authentication?style=flat-square&color=red" alt="GitHub Issues" /></a>
   <a href="https://github.com/ishandutta2007/Awesome-Cloud-Identity-User-Authentication/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-MIT-green.svg?style=flat-square" alt="License" /></a>
@@ -81,9 +81,9 @@ The global Identity and Access Management (IAM) market is estimated between **$2
 
 ## 🔓 Open-Source GitHub Projects
 
-*Curated open-source identity providers, self-hosted authentication engines, and fine-grained authorization platforms ranked by community adoption (GitHub star count).*
+*Curated open-source identity providers, self-hosted authentication engines, and fine-grained authorization platforms ranked by community adoption (GitHub Stars_Count).*
 
-| 🚀 Project | ⭐ Stars | 📖 Description & Architectural Focus |
+| 🚀 Project | ⭐ GitHub_Stars | 📖 Description & Architectural Focus |
 |:---|:---|:---|
 | **[Keycloak](https://github.com/keycloak/keycloak)** | [![Stars](https://img.shields.io/github/stars/keycloak/keycloak?style=social&color=white)](https://github.com/keycloak/keycloak/stargazers) | The industry standard open-source IAM solution backed by Red Hat. Comprehensive support for OpenID Connect, SAML 2.0, OAuth 2.0, LDAP federation, user federation, and fine-grained role-based access control. |
 | **[Authelia](https://github.com/authelia/authelia)** | [![Stars](https://img.shields.io/github/stars/authelia/authelia?style=social&color=white)](https://github.com/authelia/authelia/stargazers) | Lightweight authentication and authorization server providing two-factor authentication and single sign-on for reverse proxies (Nginx, Traefik, Caddy, Envoy). |
@@ -124,7 +124,7 @@ Contributions are welcome and appreciated!
 
 1. 🍴 **Fork** this repository.
 2. 📝 **Add or update** entries in [README.md](file:///C:/Users/ishan/Documents/Projects/Awesome-Cloud-Identity-User-Authentication/README.md) following the established table structure.
-3. 🔍 **Verify details**: Ensure pricing tiers, free tier constraints, star count rankings, and company metrics are accurate and current.
+3. 🔍 **Verify details**: Ensure pricing tiers, free tier constraints, Stars_Count rankings, and company metrics are accurate and current.
 4. 🚀 **Submit a Pull Request** with a concise description of your additions.
 
 ---
