@@ -1,6 +1,6 @@
 # Awesome-Cloud-Identity-User-Authentication
 
-# Top Cloud Identity & User Authentication Ecosystem
+## Top Cloud Identity & User Authentication Ecosystem
 
 **Curated List of SaaS Products & Open-Source GitHub Projects**  
 *Focused on Single Sign-On, Multi-Factor Authentication & Customer Identity Access Management*  
