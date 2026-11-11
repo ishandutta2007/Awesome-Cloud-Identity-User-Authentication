@@ -8,65 +8,76 @@
 
 This repository tracks notable **SaaS platforms** and **open-source projects** for **Cloud Identity & User Authentication**. These tools help organizations manage user identities, enforce secure authentication, and control access to applications—covering workforce SSO, customer identity (CIAM), passwordless login, MFA, and fine-grained authorization.
 
-**Examples** include Okta, Microsoft Entra ID, Auth0, Ping Identity, JumpCloud, OneLogin, Stytch, Clerk, Descope, and Freshworks Identity (the category leaders).
+---
 
-**Open-source emphasis**: This section highlights every major active project for self-hosted identity providers, open-source authentication servers, and community-driven IAM platforms—ideal for developers, platform engineers, and organizations seeking transparent, vendor-neutral identity infrastructure without per-MAU pricing cliffs.
+## Sector Overview & Market Dynamics
 
-Contributions welcome! Open an PR to add/update entries. Keep descriptions factual and link to official sites.
+The global Identity and Access Management (IAM) market is estimated between **$25.6 billion and $29.7 billion in 2026**, expanding at a compound annual growth rate (CAGR) of 11%–17% toward an anticipated $60+ billion by the early 2030s. The sector is **moderately concentrated** at the enterprise foundation—dominated by cloud and security mega-vendors like Microsoft (Entra ID holding >16% market share) alongside consolidated pillars like Okta, CyberArk, and Ping Identity—while remaining **highly fragmented** across specialized sub-segments such as non-human/machine identity management, Identity Threat Detection and Response (ITDR), developer-first CIAM, and fine-grained authorization (ReBAC/Zanzibar).
+
+---
 
 ## Table of Contents
-- [SaaS/Hosted Platforms](#saas-products)
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
+- [SaaS/Hosted Platforms](#saashosted-platforms)
 - [Open-Source GitHub Projects](#open-source-github-projects)
 - [How to Contribute](#how-to-contribute)
 - [Disclaimer](#disclaimer)
 
+---
+
 ## SaaS/Hosted Platforms
 
-| Product | Description | Pricing (Starting) | Free Tier / Trial Limits |
-|---------|-------------|-------------------|--------------------------|
-| **[Okta](https://www.okta.com/)** | Enterprise workforce and customer identity platform. Workforce Identity sold as per-user suites (Starter, Essentials, Professional, Enterprise). Customer Identity requires Enterprise base platform plus B2C/B2B suites . | Workforce Starter: $6/user/month (annual); Essentials: $17/user/month; Customer Identity base: $3,000/month (annual) | No free tier for workforce; $1,500 annual contract minimum; trial available via sales |
-| **[Microsoft Entra ID](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id)** | Microsoft's cloud IAM (formerly Azure AD). Free edition included with Azure/M365 subscriptions; P1 adds Conditional Access, SSPR, hybrid identity; P2 adds Identity Protection and PIM . | P1: $6/user/month; P2: $9/user/month | **Free edition**: basic directory, user/group management, security defaults MFA, included with Azure/M365 subscriptions  |
-| **[Auth0](https://auth0.com/)** | Developer-first CIAM platform with extensibility via Actions, Organizations for B2B multi-tenancy, and broad SDK coverage. Acquired by Okta but operates as separate product line . | Essentials: $35/month (up to 500 MAU); Professional: $240/month (up to 1,000 MAU); Enterprise: ~$30,000/year  | **Free tier**: ~25,000 MAU, unlimited logins, no credit card required  |
-| **[Ping Identity](https://www.pingidentity.com/)** | Enterprise identity platform for workforce and customer IAM with strong federation and API security capabilities. | Quote-only (enterprise contract) | Trial via sales; no self-serve free tier |
-| **[JumpCloud](https://jumpcloud.com/)** | Directory platform combining identity, device management, and access control. Popular for MSPs and mid-market organizations managing hybrid workforces. | Quote-only (per-user, per-device pricing) | Free trial available; free tier for up to 10 users (limited features) |
-| **[OneLogin](https://www.onelogin.com/)** | Cloud-based SSO and identity management (now part of One Identity). Role-based app access provisioning and directory integration. | Quote-only (per-user pricing) | Free trial available; no permanent free tier |
-| **[Stytch](https://stytch.com/)** | API-first authentication platform with passwordless, OAuth, SSO, and fraud prevention. Pricing includes generous free MAU allowance and transparent overages . | Pay-as-you-go; base $0/month with 10,000 free MAU | **Always free**: 10,000 MAU, 5 SSO/SCIM connections, 1,000 M2M tokens, full authn/authz features  |
-| **[Clerk](https://clerk.com/)** | Drop-in authentication and user management for React/Next.js with prebuilt UI components, B2B Organizations, and billing integration . | Pro: $25/month (50,000 included users per app, $0.02/mo each additional); Business: higher tier | **Hobby (free)**: 50,000 users per app, unlimited applications, 3 dashboard seats, core auth features  |
-| **[Descope](https://www.descope.com/)** | No-code/low-code CIAM with visual workflow builder, passwordless, SSO, and M2M/agentic identity support . | Pro: starts at $249/month (10,000 MAU, 5 SSO connections) | **Free Forever**: 7,500 MAU, 3 SSO connections, 1 OIDC federated app, 10,000 M2M exchanges, 99% SLA  |
-| **[Freshworks Identity](https://www.freshworks.com/)** | Identity and SSO capabilities within the Freshworks ecosystem (Freshdesk, Freshservice, Freshsales). SSO available on Growth, Pro, and Enterprise plans . | Freshdesk Growth: $19/agent/month (annual) | Free plan for Freshdesk (1–2 agents, 6 months); trial available for paid tiers |
+| Product | Company Scale (Valuation / Revenue) | Description | Pricing (Starting) | Free Tier / Trial Limits |
+|---------|------------------------------------|-------------|-------------------|--------------------------|
+| **[Microsoft Entra ID](https://www.microsoft.com/en-us/security/business/identity-access/microsoft-entra-id)** | **~$4.0T Market Cap** / ~$245B+ Annual Revenue | Enterprise cloud IAM (formerly Azure AD). Deeply embedded in Microsoft 365 and Azure environments with advanced conditional access and governance. | **$6/user/month** (P1 plan; P2 at $9/user/month) | **Free edition (perpetual)**: Basic directory, user/group management, self-service password reset for cloud apps, and security defaults MFA included with Azure/M365 accounts |
+| **[Okta](https://www.okta.com/)** | **~$28B–$30B Market Cap** / ~$3.0B Annual Revenue | Market-leading independent enterprise workforce and customer identity platform supporting hybrid IT, lifecycle management, and Zero Trust. | **$6/user/month** (Workforce Starter; Essentials $17/user/mo; CIAM base from $3,000/mo) | **30-day free trial** (Workforce); no perpetual free tier for workforce (requires $1,500/year contract minimum) |
+| **[Auth0](https://auth0.com/)** | **Part of Okta (~$28B–$30B Market Cap)** / Acquired for $6.5B | Developer-first CIAM platform with extensibility via Actions, universal login, B2B Organizations multi-tenancy, and SDKs. | **$35/month** (Essentials plan; includes up to 500 MAU; Professional from $240/month) | **Free Forever**: 25,000 MAU, unlimited logins, standard social connections, and community support with no credit card required |
+| **[Freshworks Identity](https://www.freshworks.com/)** | **~$3.2B–$3.5B Market Cap** / ~$900M+ ARR | Identity, SSO, and user lifecycle directory unified across the Freshworks business software suite. | **$19/agent/month** (Freshdesk Growth annual plan; enables custom SSO and SAML) | **Free Forever plan**: 2 agents free on Freshdesk; 14-day full-featured free trial for paid tiers |
+| **[Ping Identity](https://www.pingidentity.com/)** | **~$2.8B Acquisition Valuation** / ~$800M ARR | Enterprise-grade hybrid identity federation, intelligent access controls, and customer identity engine (merged with ForgeRock). | **$3/user/month** (PingOne for Workforce Essential tier; CIAM packages starting ~$20,000/year) | **30-day free trial**: Sandbox environment supports up to 1,000 active identities across test environments |
+| **[JumpCloud](https://jumpcloud.com/)** | **~$2.6B Valuation** / ~$150M+ ARR | Cloud directory platform unifying device management (MDM for Mac/Windows/Linux), SSO, and conditional access. | **$9/user/month** (Device Management plan; SSO package at $11/user/mo; combined identity + device at $13/user/mo) | **30-day free trial**: Full access to all platform features; standalone feature fair-use trials up to 30 days |
+| **[OneLogin](https://www.onelogin.com/)** | **Part of One Identity / Quest (~$5.4B PE Acquisition)** | Enterprise identity and access management platform offering unified SSO, adaptive MFA, and smart user lifecycle provisioning. | **$3/user/month** (Basic plan; Essentials at $6/user/month; Business at $10/user/month) | **30-day free trial**: Full feature evaluation across directory connectors and SSO portals |
+| **[Stytch](https://stytch.com/)** | **~$1.0B Peak Valuation** (Acquired by Twilio) | API-first authentication infrastructure for modern web applications and AI agents, specializing in passwordless and passkeys. | **$0 base + usage** ($0.05/MAU after free allowance; B2B SSO starts with 5 included connections) | **Free Forever**: 10,000 monthly active users (MAU), 5 SSO/SCIM connections, 1,000 M2M tokens, and full auth features |
+| **[Clerk](https://clerk.com/)** | **~$250M–$330M Valuation** / ~$20M–$30M ARR | Complete user authentication and organization management platform built natively for React, Next.js, and modern full-stack frameworks. | **$25/month** (Pro plan; includes 50,000 MAU + $0.02 per additional MAU; customized Enterprise) | **Free Forever (Hobby)**: 50,000 monthly active users per app, unlimited applications, 3 team dashboard seats, and core authentication |
+| **[Descope](https://www.descope.com/)** | **~$250M–$500M Valuation** / $88M Total Funding | Visual drag-and-drop workflow CIAM platform covering passwordless, biometrics, SSO, and machine-to-machine (M2M)/agentic IAM. | **$249/month** (Pro plan; includes 10,000 MAU, 5 SSO connections, and production SLA) | **Free Forever**: 7,500 MAU, 3 SSO connections, 1 OIDC federated app, and 10,000 M2M token exchanges |
+
+---
 
 ## Open-Source GitHub Projects
 
-| Project | Star Badge | Description |
-|---------|------------|-------------|
-| **[Keycloak](https://github.com/keycloak/keycloak)** | [![Stars](https://img.shields.io/github/stars/keycloak/keycloak?style=social&color=white)](https://github.com/keycloak/keycloak/stargazers) | The most widely adopted open-source IAM solution. Supports OIDC, SAML, OAuth 2.0, LDAP, and social login with RBAC and fine-grained admin permissions. Backed by Red Hat; self-hosted or managed via third parties. |
-| **[ZITADEL](https://github.com/zitadel/zitadel)** | [![Stars](https://img.shields.io/github/stars/zitadel/zitadel?style=social&color=white)](https://github.com/zitadel/zitadel/stargazers) | Event-sourced identity platform with OIDC, SAML, and RBAC. Provides audit trails, multi-instance isolation, and a modern API-first architecture. |
-| **[Casdoor](https://github.com/casdoor/casdoor)** | [![Stars](https://img.shields.io/github/stars/casdoor/casdoor?style=social&color=white)](https://github.com/casdoor/casdoor/stargazers) | Open-source IAM/SSO platform with web UI supporting OAuth 2.0, OIDC, SAML, CAS, LDAP, and RBAC. Multi-tenancy via organizations. |
-| **[SuperTokens](https://github.com/supertokens/supertokens-core)** | [![Stars](https://img.shields.io/github/stars/supertokens/supertokens-core?style=social&color=white)](https://github.com/supertokens/supertokens-core/stargazers) | Open-source authentication with email/password, social login, passwordless, and session management. Self-hosted or managed cloud; positioned as an Auth0 alternative with predictable pricing. |
+Curated open-source identity providers, authentication engines, and access control platforms sorted by GitHub star count:
 
-### Additional Strong Open-Source Options
+| Project | Stars | Description |
+|---------|-------|-------------|
+| **[Keycloak](https://github.com/keycloak/keycloak)** | [![Stars](https://img.shields.io/github/stars/keycloak/keycloak?style=social&color=white)](https://github.com/keycloak/keycloak/stargazers) | The industry standard open-source IAM solution backed by Red Hat. Comprehensive support for OpenID Connect, SAML 2.0, OAuth 2.0, LDAP federation, user federation, and fine-grained role-based access control. |
+| **[Authelia](https://github.com/authelia/authelia)** | [![Stars](https://img.shields.io/github/stars/authelia/authelia?style=social&color=white)](https://github.com/authelia/authelia/stargazers) | Lightweight authentication and authorization server providing two-factor authentication and single sign-on for reverse proxies (Nginx, Traefik, Caddy, Envoy). |
+| **[authentik](https://github.com/goauthentik/authentik)** | [![Stars](https://img.shields.io/github/stars/goauthentik/authentik?style=social&color=white)](https://github.com/goauthentik/authentik/stargazers) | Versatile, self-hosted Identity Provider designed for flexibility. Supports OAuth2/OIDC, SAML, LDAP, SCIM, and proxy authentication with an extensible policy engine and modern UI. |
+| **[Ory Hydra](https://github.com/ory/hydra)** | [![Stars](https://img.shields.io/github/stars/ory/hydra?style=social&color=white)](https://github.com/ory/hydra/stargazers) | Hardened, OpenID Certified OAuth 2.0 and OpenID Connect (OIDC) engine written in Go. Connects to existing user directories without managing user databases directly. |
+| **[ZITADEL](https://github.com/zitadel/zitadel)** | [![Stars](https://img.shields.io/github/stars/zitadel/zitadel?style=social&color=white)](https://github.com/zitadel/zitadel/stargazers) | Modern cloud-native identity platform built with event-sourcing in Go. Features multi-tenancy, turnkey audit trails, B2B self-service organizations, Passkeys, and OIDC/SAML. |
+| **[SuperTokens](https://github.com/supertokens/supertokens-core)** | [![Stars](https://img.shields.io/github/stars/supertokens/supertokens-core?style=social&color=white)](https://github.com/supertokens/supertokens-core/stargazers) | Open-source alternative to Auth0 and Firebase Auth. Offers modular recipes for session management, social login, passwordless OTP/magic links, MFA, and user management with pre-built frontend SDKs. |
+| **[Logto](https://github.com/logto-io/logto)** | [![Stars](https://img.shields.io/github/stars/logto-io/logto?style=social&color=white)](https://github.com/logto-io/logto/stargazers) | Modern, developer-centric alternative to Auth0 with out-of-the-box sign-in experience, multi-tenant B2B support, Passkey authentication, and webhook automation. |
+| **[Casdoor](https://github.com/casdoor/casdoor)** | [![Stars](https://img.shields.io/github/stars/casdoor/casdoor?style=social&color=white)](https://github.com/casdoor/casdoor/stargazers) | UI-first IAM and SSO platform built in Go and React. Supports OAuth 2.0, OIDC, SAML, CAS, LDAP, social log-in providers, and granular permission architectures. |
+| **[Ory Kratos](https://github.com/ory/kratos)** | [![Stars](https://img.shields.io/github/stars/ory/kratos?style=social&color=white)](https://github.com/ory/kratos/stargazers) | Headless, API-first identity and user management service. Provides robust authentication, multi-factor authentication (MFA/TOTP/WebAuthn), account verification, and profile management. |
+| **[Dex IdP](https://github.com/dexidp/dex)** | [![Stars](https://img.shields.io/github/stars/dexidp/dex?style=social&color=white)](https://github.com/dexidp/dex/stargazers) | Pluggable OpenID Connect (OIDC) identity provider. Acts as an authentication portal that proxies identity requests to upstream providers like LDAP, SAML, GitHub, Google, and GitLab; standard in Kubernetes deployments. |
+| **[OpenFGA](https://github.com/openfga/openfga)** | [![Stars](https://img.shields.io/github/stars/openfga/openfga?style=social&color=white)](https://github.com/openfga/openfga/stargazers) | CNCF fine-grained authorization engine inspired by Google Zanzibar. Implements Relationship-Based Access Control (ReBAC) designed for high-throughput, low-latency authorization checks. |
+| **[Cerbos](https://github.com/cerbos/cerbos)** | [![Stars](https://img.shields.io/github/stars/cerbos/cerbos?style=social&color=white)](https://github.com/cerbos/cerbos/stargazers) | Lightweight, stateless authorization policy engine. Decouples role- and attribute-based access control (RBAC/ABAC) logic from code using declarative YAML policies. |
 
-| Project | Star Badge | Description |
-|---------|------------|-------------|
-| **[Ory Kratos](https://github.com/ory/kratos)** | [![Stars](https://img.shields.io/github/stars/ory/kratos?style=social&color=white)](https://github.com/ory/kratos/stargazers) | API-first identity server with MFA, passwordless, social login, and OIDC. Designed for cloud-native deployments; part of the Ory ecosystem (Keto, Hydra, Oathkeeper). |
-| **[Authelia](https://github.com/authelia/authelia)** | [![Stars](https://img.shields.io/github/stars/authelia/authelia?style=social&color=white)](https://github.com/authelia/authelia/stargazers) | Lightweight SSO and 2FA portal for self-hosted applications. Integrates with reverse proxies (Traefik, Nginx) for authentication enforcement. |
-| **[OpenFGA](https://github.com/openfga/openfga)** | [![Stars](https://img.shields.io/github/stars/openfga/openfga?style=social&color=white)](https://github.com/openfga/openfga/stargazers) | Fine-grained authorization inspired by Google Zanzibar. CNCF project; complements identity providers with relationship-based access control. |
-
-**Frameworks for building custom systems**: Combine **Keycloak** or **ZITADEL** for core identity and SSO, **Ory Kratos** for API-first authentication, **OpenFGA** for fine-grained authorization, and **Authelia** for lightweight self-hosted SSO—deployable via Docker Compose or Kubernetes.
+---
 
 ## How to Contribute
 
 1. Fork the repo.
-2. Add/edit entries in `README.md` (follow existing format).
-3. Include: name, link, 1–2 sentence description, and whether it's SaaS or open-source.
+2. Add/edit entries in [README.md](file:///C:/Users/ishan/Documents/Projects/Awesome-Cloud-Identity-User-Authentication/README.md) (follow existing table schemas and badge formats).
+3. Include: name, link, specific pricing/limits or verified GitHub star links, and accurate company scale or open-source descriptions.
 4. Submit PR with a short explanation.
 
 Star the repo if you find it useful!
 
+---
+
 ## Disclaimer
 
 - This is a **community-curated** list — not exhaustive and not an endorsement.
-- Identity platforms handle authentication credentials and personal data; enforce MFA, least-privilege access, and compliance with applicable regulations (GDPR, SOC 2, HIPAA where relevant).
+- Identity platforms handle sensitive authentication credentials and personal data; enforce MFA, least-privilege access, and compliance with applicable regulations (GDPR, SOC 2, HIPAA where relevant).
 - Free tier limits and per-MAU pricing change frequently; model total cost against projected user growth before committing. Self-hosted open-source IAM requires security hardening, regular updates, and backup of identity data.
 
 ---
